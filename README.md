@@ -31,7 +31,7 @@ Un pequeño ejemplo de cómo muestra el siguiente comando es el siguiente
 
 Y, en efecto, el contenedor no está arrancado, y su nombre es "Inspiring_model" ya que lo hace de manera automatica el sistema si no lo especificamos.
 
-<a name="e1">### **3. Crea un contenedor con el nombre 'dam_ubu1'. ¿Cómo puedes acceder a él?**</a>
+### <a name="e1">**3. Crea un contenedor con el nombre 'dam_ubu1'. ¿Cómo puedes acceder a él?**</a>
 
 Con el siguiente comando, especificamos el nombre con el cual queremos crear el contenedor.
 
@@ -41,7 +41,7 @@ Accedemos a él gracias al uso de la variable/opción "it", permitiendo así int
 
 De la misma manera utilizamos la variables "--name" para que seguidamente nombremos nuestro contenedor.
 
-<a name="e2"></a>### **4. Comprueba qué IP tiene y si puede hacer un ping a google.com**
+### <a name="e2">**4. Comprueba qué IP tiene y si puede hacer un ping a google.com**</a> 
 
 Primero, hay que actualizar la lista de paquetes con el comando siguiente.
 
