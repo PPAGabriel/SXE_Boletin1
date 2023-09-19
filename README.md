@@ -35,9 +35,12 @@ Y, en efecto, el contenedor no está arrancado, y su nombre es "Inspiring_model"
 
 Con el siguiente comando, especificamos el nombre con el cual queremos crear el contenedor.
 
-> `docker run -it --name dam_ubuntu ubuntu`
+> `docker run -it --name dam_ubu1 ubuntu`
 
 Accedemos a él gracias al uso de la variable/opción "it", permitiendo así interactuar con el contenedor.
 
 De la misma manera utilizamos la variables "--name" para que seguidamente nombremos nuestro contenedor.
+
+### **4. Comprueba qué IP tiene y si puede hacer un ping a google.com**
+
 
