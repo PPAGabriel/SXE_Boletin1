@@ -10,5 +10,22 @@ De esta manera, si la imagen no es encontrada, la descargará automáticamente. 
 
 > `docker image ls -a`
 
-*Cabe destacar: el hecho de descargar la imagen y cque corra, no implica que este abierto para recibir comandos en consola.*
+*Cabe destacar: el hecho de descargar la imagen y que corra, no implica que este abierto para recibir comandos en consola.*
 
+### **2. Crea un contenedor sin ponerle nombre. ¿Está arrancado? Obtén el nombre**
+
+Para crear el repositorio, previamente empleamos el mismo comando.
+
+> `docker run ubuntu`
+
+Ahora bien, al no especificar un nombre ni que este sea arrancado, se mantiene en segundo plano. Por ende, empleamos el siguiente comando para ubicar todos los contenedores creados.
+
+> `docker ps -a`
+
+Un pequeño ejemplo de cómo muestra el siguiente comando es el siguiente
+
+| CONTAINER ID  | IMAGE | COMMAND | CREATED | STATUS | PORTS | NAMES |
+|---------------|-------|---------|---------|--------|------|-------|
+|079d6e5b2f1d        |ubuntu | "/bin/bash/"  | 35 minutes ago    | Exited (0) 35 minutes ago    |    | Inspiring_mendel  |
+
+Y, en efecto, el contenedor no está arrancado, y su nombre es "Inspiring_model" ya que lo hace de manera automatica el sistema si no lo especificamos.
