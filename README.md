@@ -43,4 +43,22 @@ De la misma manera utilizamos la variables "--name" para que seguidamente nombre
 
 ### **4. Comprueba qué IP tiene y si puede hacer un ping a google.com**
 
+Primero, hay que actualizar la lista de paquetes con el comando siguiente.
+
+> `apt update`
+
+Ahora, se instala *net-tools*, el cual nos permitirá visualizar nuestra ip
+
+> `apt install net-tools`
+
+> `ifconfig`
+
+Este ultimo nos muestra nuestra IP, siendo esta: 172.17.0.2.
+
+Adicionalmente, con el paquete *iputils-ping*, podemos hacer ping a Google. 
+
+>`apt install iputils-ping`
+
+> `ping google.com`
+
 
