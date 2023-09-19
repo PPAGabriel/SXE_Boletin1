@@ -31,7 +31,7 @@ Un pequeño ejemplo de cómo muestra el siguiente comando es el siguiente
 
 Y, en efecto, el contenedor no está arrancado, y su nombre es "Inspiring_model" ya que lo hace de manera automatica el sistema si no lo especificamos.
 
-### **3. Crea un contenedor con el nombre 'dam_ubu1'. ¿Cómo puedes acceder a él?**
+<a name="e1">### **3. Crea un contenedor con el nombre 'dam_ubu1'. ¿Cómo puedes acceder a él?**</a>
 
 Con el siguiente comando, especificamos el nombre con el cual queremos crear el contenedor.
 
@@ -41,7 +41,7 @@ Accedemos a él gracias al uso de la variable/opción "it", permitiendo así int
 
 De la misma manera utilizamos la variables "--name" para que seguidamente nombremos nuestro contenedor.
 
-### **4. Comprueba qué IP tiene y si puede hacer un ping a google.com**
+<a name="e2"></a>### **4. Comprueba qué IP tiene y si puede hacer un ping a google.com**
 
 Primero, hay que actualizar la lista de paquetes con el comando siguiente.
 
@@ -60,5 +60,11 @@ Adicionalmente, con el paquete *iputils-ping*, podemos hacer ping a Google.
 >`apt install iputils-ping`
 
 > `ping google.com`
+
+### **5. Crea un contenedor con el nombre 'dam_ubu2'. ¿Puedes hacer ping entre los contenedores?**
+
+Repetimos el procedimiento del [apartado 3](#e1), y asi creamos el segundo contenedor llamado 'dam_ubu2'.
+
+Igualmente, usamos  el [apartado 4](#e2) para hacer ping con el contenedor, utilizando la IP del contenedor de 'dam_ubu1'.
 
 
