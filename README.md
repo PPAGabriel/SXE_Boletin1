@@ -79,6 +79,20 @@ Al ejecutar el comando *"docker ps"*, podemos verificar que en el Status, que es
 
 ### **7. ¿Cuánta memoria en el disco duro ocupaste?**
 
+Existe un comando que permite ver el tamaño ocupado en memoria usada en disco por Docker. Permitiendo asi visualizar imagenes, contenedores, entre otras cosas (de manera general). Para ser más específico, se usa la variable *"-v"*.
+
+>`docker system df -v`
+
+Gracias a este comando, podemos ver que el contenedor "*dam_ubu1*" usó 46.1MB, y *"dam_ubu2"* un 45.4MB de espacio de memoria.
+
+| CONTAINER ID  | IMAGE | COMMAND | LOCAL VOLUMES| SIZE | CREATED | STATUS | NAMES |
+|---------------|-------|---------|---------|--------|------|-------|-------|
+|f2dd06ec1c0f   |ubuntu |"/bin/bash/"| 0    | 45.4MB | 2 hours ago | Exited (0) 2 hours ago|dam_ubu2  |
+|1c6f9f0b87c7   |ubuntu |"/bin/bash/"| 0    | 46.1MB | 2 hours ago | Exited (0) 2 hours ago|dam_ubu1  |
+
+
+### **8. ¿Cuanta RAM ocupan los contenedores? ¿Hay algún comando docker para saber esto?.**
+
 Para el caso del contenedor *"dam_ubu1"*, el cual estaba aún subido, ocupó un espacio de memoria en uso de 4.535 MiB (con un límite de 15.39 GiB).
 
 Ahora bien, ¿qué sucede con el resto de contenedores que fueron creados pero no estan arrancados?
@@ -89,3 +103,7 @@ Para ver todos los contenedores y sus estados, usamos el siguiente comando.
 
 >`docker stats -a`
 
+----
+<br/><br/><br/>
+
+# Si te gustó este resumen, ¡dale un 10 a esta entrega! :smile:
