@@ -67,4 +67,15 @@ Repetimos el procedimiento del [apartado 3](#e1), y asi creamos el segundo conte
 
 Igualmente, usamos  el [apartado 4](#e2) para hacer ping con el contenedor, utilizando la IP del contenedor de 'dam_ubu1'.
 
+### **6. Sal del terminal, ¿Qué ocurrió con el contenedor?**
+
+Al salir del terminal, el contenedor se cierra, pero no significa que el contenedor desaparezca.
+
+Al ejecutar el comando *"docker ps"*, podemos verificar que en el Status, que este sigue activo. De tal manera que podemos volver a entrar y ejecutar ordenes en este.
+
+| CONTAINER ID  | IMAGE | COMMAND | CREATED | STATUS | PORTS | NAMES |
+|---------------|-------|---------|---------|--------|------|-------|
+|1c6f9f0b87c7        |ubuntu | "/bin/bash/"  | 2 hours ago    | Up 27 seconds    |    | dam_ubu1  |
+
+
 
