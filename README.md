@@ -77,5 +77,15 @@ Al ejecutar el comando *"docker ps"*, podemos verificar que en el Status, que es
 |---------------|-------|---------|---------|--------|------|-------|
 |1c6f9f0b87c7        |ubuntu | "/bin/bash/"  | 2 hours ago    | Up 27 seconds    |    | dam_ubu1  |
 
+### **7. ¿Cuánta memoria en el disco duro ocupaste?**
 
+Para el caso del contenedor *"dam_ubu1"*, el cual estaba aún subido, ocupó un espacio de memoria en uso de 4.535 MiB (con un límite de 15.39 GiB).
+
+Ahora bien, ¿qué sucede con el resto de contenedores que fueron creados pero no estan arrancados?
+
+Pues, sencillamente, no ocupan un espacio de memoria mientras están en dicho estado.
+
+Para ver todos los contenedores y sus estados, usamos el siguiente comando.
+
+>`docker stats -a`
 
